@@ -30,7 +30,7 @@ cd /vagrant
 ### Dockerコンテナを使った開発
 ```bash
 docker build . -t app:base
-docker run --name app --rm -p 3000:3000 -v $(PWD):/container -i -t app:base /bin/bash
+docker run --name app --rm -p 5000:5000 -v $(PWD):/container -i -t app:base /bin/bash
 cd /container
 ```
 
@@ -39,9 +39,9 @@ cd /container
 ### Railsアプリケーションのセットアップ
 ```bash
 bundle install
-rails s -b 0.0.0.0 -p 3000
+rails s -b 0.0.0.0 -p 5000
 ```
-`http://0.0.0.0:3000`に接続して動作を確認する
+`http://0.0.0.0:5000`に接続して動作を確認する
 
 ### Webpackerのセットアップ
 ```bash
@@ -51,6 +51,11 @@ bin/rails webpacker:install
 ### Reactのセットアップ
 ```bash
 bin/rails webpacker:install:react
+```
+
+### webpack-dev-serverを有効にする
+```bash
+bundle exec foreman start -f Procfile.dev
 ```
 **[⬆ back to top](#構成)**
 
