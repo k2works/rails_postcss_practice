@@ -7,3 +7,13 @@ module.exports = {
     use: ['css-loader', 'postcss-loader', 'sass-loader']
   })
 }
+
+module.exports = {
+    test: /\.(scss|sass|css)$/i,
+    loaders: [
+        'style-loader',
+        'css-loader?modules=true&localIdentName=[name]__[local]___[hash:base64:5]',
+        'postcss-loader?modules=true&localIdentName=[name]__[local]___[hash:base64:5]',
+        'sass-loader?modules=true&localIdentName=[name]__[local]___[hash:base64:5]'
+    ],
+}

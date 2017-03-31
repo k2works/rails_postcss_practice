@@ -30,7 +30,7 @@ cd /vagrant
 ### Dockerコンテナを使った開発
 ```bash
 docker build . -t app:base
-docker run --name app --rm -p 5000:5000 -p 8080:8080 -v $(PWD):/container -i -t app /bin/bash
+docker run --name app --rm -p 5000:5000 -p 8080:8080 -v $(PWD):/container -i -t app:base /bin/bash
 cd /container
 ```
 
@@ -95,6 +95,13 @@ Crumb Dataが必要な場合は`http://0.0.0.0:9000/crumbIssuer/api/json`からc
 ### hello_react.jsxを表示する画面を作成する
 ```bash
 rails g controller Home index
+```
+
+### PostCSSのセットアップ 
+
+`scandir '/container/node_modules/node-sass/vendor'`と出たら以下のコマンドを実行する
+```bash
+npm rebuild node-sass
 ```
 
 **[⬆ back to top](#構成)**
