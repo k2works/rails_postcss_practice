@@ -75,3 +75,9 @@ RUN apt-get update && apt-get install -y  \
                                       sqlite3 --no-install-recommends \
                                       xvfb qtbase5-dev libqt5webkit5-dev \
                                       xauth
+
+# Heroku Toolbelt
+RUN wget https://cli-assets.heroku.com/branches/stable/heroku-linux-amd64.tar.gz -O heroku.tar.gz \
+    && mkdir -p /usr/local/lib \
+    && tar -xvzf heroku.tar.gz -C /usr/local/lib \
+    && /usr/local/lib/heroku/install
