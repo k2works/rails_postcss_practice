@@ -68,3 +68,5 @@ fabric.properties
 
 .vagrant/public/packs
 /node_modules
+
+public/packs
