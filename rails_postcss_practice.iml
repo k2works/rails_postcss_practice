@@ -59,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.12.1, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.0.0, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.7.1, rbenv: 2.4.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.19.0, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v2.0.5, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.8.2, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.1, rbenv: 2.4.1) [gem]" level="application" />
@@ -87,6 +88,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.3, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v3.1.11, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v3.5.0, rbenv: 2.4.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webpacker (v1.1@a107b7, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket (v1.2.4, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.6.5, rbenv: 2.4.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.2, rbenv: 2.4.1) [gem]" level="application" />
