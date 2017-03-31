@@ -42,7 +42,9 @@ RUN set -ex \
   && curl -fSL -o yarn.js.asc "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js.asc" \
   && gpg --batch --verify yarn.js.asc yarn.js \
   && rm yarn.js.asc \
+  && cp yarn.js /usr/local/bin/yarnpkg \
   && mv yarn.js /usr/local/bin/yarn \
+  && chmod +x /usr/local/bin/yarnpkg \
 && chmod +x /usr/local/bin/yarn
 
 # PhantomJS Install
