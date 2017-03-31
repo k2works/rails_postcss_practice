@@ -26,4 +26,4 @@ RUN $APP_ROOT/bin/rake test
 #RUN RAILS_ENV=test $APP_ROOT/bin/rake db:setup
 
 EXPOSE  3000
-CMD ["rails", "server", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "foreman","start","-f", "Procfile.dev"]
